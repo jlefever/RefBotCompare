@@ -1,0 +1,107 @@
+{
+  "session_cookie": "",
+  "cache_dir": "./cache/",
+  "max_ref_bot_requests": 3,
+  "projects": [
+    {
+      "name": "opencsv",
+      "ref_bot_id": 1630,
+      "git_url": ""
+    },
+    {
+      "name": "gson",
+      "ref_bot_id": 3337,
+      "git_url": ""
+    },
+    {
+      "name": "jolt",
+      "ref_bot_id": 3481,
+      "git_url": ""
+    },
+    {
+      "name": "JSAT",
+      "ref_bot_id": 3675,
+      "git_url": ""
+    },
+    {
+      "name": "smile",
+      "ref_bot_id": 12436,
+      "git_url": ""
+    },
+    {
+      "name": "hdiv",
+      "ref_bot_id": 15730,
+      "git_url": ""
+    },
+    {
+      "name": "pac4j",
+      "ref_bot_id": 18182,
+      "git_url": ""
+    },
+    {
+      "name": "ExampleGrocery",
+      "ref_bot_id": 38572,
+      "git_url": ""
+    },
+    {
+      "name": "FreeChart",
+      "ref_bot_id": 52114,
+      "git_url": ""
+    },
+    {
+      "name": "ArgoUml",
+      "ref_bot_id": 55897,
+      "git_url": ""
+    },
+    {
+      "name": "JhotDraw",
+      "ref_bot_id": 55898,
+      "git_url": ""
+    },
+    {
+      "name": "Ant",
+      "ref_bot_id": 55899,
+      "git_url": ""
+    },
+    {
+      "name": "ganttproject",
+      "ref_bot_id": 55900,
+      "git_url": ""
+    },
+    {
+      "name": "Apache Ant",
+      "ref_bot_id": 73632,
+      "git_url": ""
+    },
+    {
+      "name": "The Fat Rat Exploiting Tool",
+      "ref_bot_id": 91096,
+      "git_url": ""
+    },
+    {
+      "name": "opencsvchaima",
+      "ref_bot_id": 93621,
+      "git_url": ""
+    },
+    {
+      "name": "duplicati",
+      "ref_bot_id": 95290,
+      "git_url": ""
+    },
+    {
+      "name": "aeron",
+      "ref_bot_id": 95294,
+      "git_url": ""
+    },
+    {
+      "name": "a1-poker",
+      "ref_bot_id": 95295,
+      "git_url": ""
+    },
+    {
+      "name": "AgroUml",
+      "ref_bot_id": 114723,
+      "git_url": ""
+    }
+  ]
+}
