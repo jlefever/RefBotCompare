@@ -12,22 +12,33 @@ namespace RefBotCompare
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var path = @"C:\Users\jtl86\source\repos\RefBotCompare\RefBotCompare\config.json";
-
             var config = LoadConfig(path);
-
-            var client = CreateRefBotClient(config);
-
-            var extractor = new ProjectExtractor(new HtmlParser());
-
-            foreach (var p in config.Projects)
-            {
-                var html = client.FetchProjectHtml(p.RefBotId).GetAwaiter().GetResult();
-                var project = extractor.ExtractProject(html);
-            }
+            var handler = new JobOutputHandler(Console.Out);
+            var url = "https://github.com/jlefever/BlockDemo/";
+            var p = new Job(config.GitExec, url, config.RepoDir, "blocks", handler);
+            p.Exec();
+            p.Dispose();
         }
+
+        //public static void Main(string[] args)
+        //{
+        //    var path = @"C:\Users\jtl86\source\repos\RefBotCompare\RefBotCompare\config.json";
+
+        //    var config = LoadConfig(path);
+
+        //    var client = CreateRefBotClient(config);
+
+        //    var extractor = new ProjectExtractor(new HtmlParser());
+
+        //    foreach (var p in config.Projects)
+        //    {
+        //        var html = client.FetchProjectHtml(p.RefBotId).GetAwaiter().GetResult();
+        //        var project = extractor.ExtractProject(html);
+        //    }
+        //}
 
         public static IRefBotClient CreateRefBotClient(Config config)
         {

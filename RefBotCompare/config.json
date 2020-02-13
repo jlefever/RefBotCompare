@@ -1,7 +1,14 @@
 {
   "session_cookie": "",
-  "cache_dir": "./cache/",
   "max_ref_bot_requests": 3,
+  "cache_dir": "./cache/",
+  "repo_dir": "./repos/",
+  "executables": {
+    "git": "git.exe",
+    "java": "java.exe",
+    "depends": "",
+    "dv8": "dv8-console.exe"
+  },
   "projects": [
     {
       "name": "opencsv",

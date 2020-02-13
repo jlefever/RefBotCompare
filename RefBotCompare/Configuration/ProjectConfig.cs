@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RefBotCompare
+namespace RefBotCompare.Configuration
 {
     public class ProjectConfig
     {
